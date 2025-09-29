@@ -8,7 +8,7 @@ export default function App() {
 
   const handleGenerate = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/generate-message", { prompt });
+      const res = await axios.post("https://diwali-project.onrender.com/api/generate-message", { prompt });
       setMessage(res.data.message);
     } catch (err) {
       console.error(err);
